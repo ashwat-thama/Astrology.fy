@@ -1,0 +1,242 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: all 0.3s cubic-bezier(.38 , 1.15 , 0.7 , 1.12);
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: #251d1e;
+}
+
+#home>nav{
+    width: 100%;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #302728;
+}
+
+#home>nav>#menu-bar{
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#home>nav>.logo{
+    color: white;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+#home>nav>.navbar.active{
+    transition: all 0.5 ease-in-out;
+    top: 100%;
+}
+
+
+#home>nav>.navbar>a{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin: 0px 1rem;
+}
+
+#home>nav>.navbar>a:hover{
+    color: rgb(172, 172, 172);
+}
+
+#home>main{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+    background-color: #251d1e;
+
+}
+
+#home>main>.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+#home>main>.content>.zodiac{
+    width: 48%;
+    text-align: center;
+}
+
+#home>main>.content>.zodiac>h3{
+    color: white;
+    font-size: 50px;
+}
+
+#home>main>.content>.zodiac>h4{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+#home>main>.content>.zodiac>p{
+    color: white;
+    font-size: 25px;
+}
+
+#home>main>.content>.zodiac-img{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home>main>.content>.zodiac-img>img{
+    width: 40%;
+    border-radius: 20px;
+}
+
+#home>.zodiac-text{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: #251d1e;
+}
+
+#home>.zodiac-text>.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 25px;
+}
+
+#home>.zodiac-text>.heading>.bar{
+    height: 3px;
+    width: 100px;
+    background-color: white;
+}
+
+#home>.zodiac-text>.heading>h3{
+    color: white;
+    font-size: 40px;
+}
+
+#home>.zodiac-text>.text>p{
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    #home>nav{
+        background-color: #302728;
+        padding: 10px 2%;
+    }
+
+    #home>nav>.logo{
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+
+    #home>nav>#menu-bar{
+        display: inline-block;
+    }
+
+    #home>nav>.navbar{
+        background-color: #302728;
+        position: absolute;
+        top:-500%; left:0%;
+        width:100%;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+
+    #home>nav>.navbar>a{
+        font-size: 1rem;
+        border:.1rem solid var(--black);
+        border-radius: .5rem;
+        padding:0.5rem;
+        margin:0.5rem;
+        display: block;
+        text-align: center;
+    }
+
+    #home>main>.content>.zodiac>h3{
+        font-size: 40px;
+    }
+    
+    #home>main>.content>.zodiac>h4{
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+    
+    #home>main>.content>.zodiac>p{
+        color: white;
+        font-size: 20px;
+    }
+    
+    #home>main>.content>.zodiac-img>img{
+        width: 60%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    #home>main>.content{
+        justify-content: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    #home>main>.content>.zodiac-img{
+        display: none;
+    }
+
+    #home>main>.content>.zodiac{
+        width: 100%;
+    }
+
+    #home>main>.content>.zodiac>h3 {
+        font-size: 25px;
+    }
+
+    #home>main>.content>.zodiac>h4{
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    #home>main>.content>.zodiac>p{
+        font-size: 15px;
+    }
+
+    #home>.zodiac-text>.text>p {
+        color: white;
+        font-size: 14px;
+    }
+}
